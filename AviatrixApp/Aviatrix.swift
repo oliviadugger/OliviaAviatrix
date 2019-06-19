@@ -30,12 +30,12 @@ class Aviatrix {
     }
     
     func flyTo(destination : String) {
-        
+        location = destination
     }
     
-    func distanceTo(target : String) -> [Int] {
+    func distanceTo(target : String) -> Int {
         location = target
-        return [data.knownDistances["St. Louis"]! [target]!]
+        return data.knownDistances["St. Louis"]![target]!
     }
     
     func knownDestinations() -> [String] {
